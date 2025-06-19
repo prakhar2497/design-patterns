@@ -1,0 +1,12 @@
+The Factory Pattern is used to encapsulate object creation logic so that the client code doesn’t need to know the specific class or how the object is constructed.
+
+When to Use the Factory Pattern?
+1. You have multiple classes implementing a common interface.
+
+2. You want to decouple object creation from its usage.
+
+3. You expect to frequently add new object types (e.g., new INotification implementations).
+
+4. You want to centralize creation logic—especially useful in large applications to reduce duplication.
+
+5. You want to avoid using new all over the place, which tightly couples your code to specific implementations.
