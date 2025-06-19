@@ -26,5 +26,10 @@ namespace factory_design_patterm.Factory
 
             throw new ArgumentException("Unsupported notification type");
         }
+
+        public static void Register(string type, Func<INotification> creator)
+        {
+            _creators[type.ToUpper()] = creator;
+        }
     }
 }
